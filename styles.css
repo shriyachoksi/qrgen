@@ -1,0 +1,136 @@
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+header p {
+    margin-top: 5px;
+    color: #aaa;
+    font-size: 16px;
+  }
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    backdrop-filter: blur(0.625rem);
+    padding: 1.25rem;
+    width: 18.75rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+    border: 2px solid #625d5d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box input {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #000;
+    margin-bottom: 10px;
+     box-sizing: border-box;
+  }
+  
+  .box input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #e6e2e2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+  .qr-code {
+    opacity: 0;
+    display: flex;
+    padding: 33px 0;
+    border-radius: 5px;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+    border: 1px solid #ccc;
+  }
+  .form :where(input, button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.1s ease;
+  }
+  
+ 
+  
+  .form input:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+  }
+  
+  .form input::placeholder {
+    color: #999;
+  }
+  
+  .box .active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+  }
+  .form button:hover {
+    background: #333;
+  }
+  
+  .form button:active {
+    transform: scale(0.95);
+  }
+  
+  
+  .qr-code img {
+    width: 170px;
+  }
+  
+  @media (max-width: 430px) {
+    .box {
+      height: 255px;
+      padding: 16px 20px;
+    }
+    .box.active {
+      height: 510px;
+    }
+    header p {
+      color: #696969;
+    }
+    .form :where(input, button) {
+      height: 52px;
+    }
+    .qr-code img {
+      width: 160px;
+    }
+  }
+  
+  
