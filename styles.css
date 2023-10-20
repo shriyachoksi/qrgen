@@ -41,24 +41,29 @@ header p {
     flex-direction: column;
     align-items: center;
     animation: borderAnimation 3s linear infinite;
+    
   }
   @keyframes borderAnimation {
     0% {
-      border-color: hsla(240, 100%, 50%, 0.9) hsla(270, 100%, 50%, 1) hsla(300, 100%, 50%, 1) hsla(330, 100%, 50%, 0.9);
+      border-color: hsla(240, 100%, 50%, 0.5) hsla(270, 100%, 50%, 1) hsla(300, 100%, 50%, 1) hsla(330, 100%, 50%, 0.9);
     }
     25% {
-      border-color: hsla(330, 100%, 50%, 1) hsla(240, 100%, 50%, 0.9) hsla(270, 100%, 50%, 0.9) hsla(300, 100%, 50%, 1);
+      border-color: hsla(330, 100%, 50%, 1) hsla(240, 100%, 50%, 0.5) hsla(270, 100%, 50%, 0.7) hsla(300, 100%, 50%, 0.6);
+      opacity: 1;
     }
     50% {
-      border-color: hsla(300, 100%, 50%, 1) hsla(330, 100%, 50%, 0.9) hsla(240, 100%, 50%, 0.9) hsla(270, 100%, 50%, 1);
+      border-color: hsla(300, 100%, 50%, 0.5) hsla(330, 100%, 50%, 0.5) hsla(240, 100%, 50%, 0.6) hsla(270, 100%, 50%, 0.5);
     }
     75% {
-      border-color: hsla(270, 100%, 50%, 0.9) hsla(300, 100%, 50%, 1) hsla(330, 100%, 50%, 1) hsla(240, 100%, 50%, 0.9);
+      border-color: hsla(270, 100%, 50%, 0.5) hsla(300, 100%, 50%, 0.5) hsla(330, 100%, 50%, 1) hsla(240, 100%, 50%, 0.5);
+      opacity: 1;
     }
     100% {
-      border-color: hsla(240, 100%, 50%, 0.9) hsla(270, 100%, 50%, 1) hsla(300, 100%, 50%, 1) hsla(330, 100%, 50%, 0.9);
+      border-color: hsla(240, 100%, 50%, 0.5) hsla(270, 100%, 50%, 0.5) hsla(300, 100%, 50%, 0.5) hsla(330, 100%, 50%, 0.5);
     }
   }
+  
+
   
   
   
