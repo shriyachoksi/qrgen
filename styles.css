@@ -183,4 +183,37 @@ header p {
   #download-container button:active {
     transform: scale(0.95);
   }
-  
+  /* Your existing styles */
+
+/* Media query for screens with a maximum width of 600px (adjust as needed) */
+@media screen and (max-width: 600px) {
+  body {
+    overflow-y: scroll; /* Add a vertical scrollbar for smaller screens */
+  }
+
+  .box {
+    position: static; /* Change position to static for proper document flow on smaller screens */
+    transform: none; /* Remove the transform */
+    margin: 0 auto; /* Center the box on smaller screens */
+  }
+
+  /* Additional styles for smaller screens if needed */
+  /* For example, you might want to adjust font sizes, padding, etc. */
+  h2 {
+    font-size: 1.5em;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  .box input,
+  .form button {
+    height: 2.5rem; /* Adjust the height of input and button for better spacing on smaller screens */
+  }
+
+  .qr-code img {
+    width: 8rem; /* Adjust the width of the QR code image for better fit on smaller screens */
+  }
+
+}
